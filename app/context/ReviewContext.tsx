@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { ReviewType } from '@/app/components/ReviewCardList';
 import toast from 'react-hot-toast';
 
