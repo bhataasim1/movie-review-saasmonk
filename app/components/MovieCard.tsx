@@ -88,7 +88,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
           <h3 className="text-xl font-semibold text-gray-800 cursor-pointer">{movie.name}</h3>
         </Link>
         <p className="text-gray-600 text-sm mt-2">
-          Released: {new Date(movie.releaseDate).toLocaleDateString()}
+          Released: {movie.releaseDate}
         </p>
         <div className="mt-3">
           <span className="text-lg font-medium">
