@@ -4,6 +4,7 @@ import { useState } from 'react';
 import MovieCardGrid from './components/MoviesCardGrid';
 import { SearchIcon } from 'lucide-react';
 import { useMovies } from './context/moviesContext';
+import Link from 'next/link';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -15,7 +16,12 @@ export default function Home() {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">The best movie reviews site!</h1>
+      <div className='flex justify-between'>
+        <h1 className="text-3xl font-bold mb-8">The best movie reviews site!</h1>
+        <Link href="/reviews" className='text-blue-400'>
+          Bonus: New Search Page
+        </Link>
+      </div>
 
       <div className="relative mx-auto mb-4">
         <SearchIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
